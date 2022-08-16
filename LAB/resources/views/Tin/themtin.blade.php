@@ -4,7 +4,7 @@
 @endsection
 
 @section('title')
-    Thông Tin SV
+    Thêm Tin
 @endsection
 
 @section('content')

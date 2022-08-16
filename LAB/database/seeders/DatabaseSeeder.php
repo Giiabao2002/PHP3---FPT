@@ -15,18 +15,25 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\User::factory(10)->create();
-        DB::table('users')->insert([
-            'name' => 'Vui Từng Phút Giây', 'email' => 'vuiqua@gmail.com',
-            'password' => bcrypt('hehe'), 'idgroup' => 1,'diachi' => 'TPHCM'
+        $this->call([
+            // chenLoaisp::class,
+            // chendienthoai::class,
+            // chenthanhvien::class,
+            chenproducts::class
         ]);
-        DB::table('users')->insert([
-            'name' => 'Buồn Từng Phút Giây', 'email' => 'buonqua@gmail.com',
-            'password' => bcrypt('huhu'), 'idgroup' => 1,'diachi' => 'TPHCM'
-        ]);
-        DB::table('users')->insert([
-            'name' => 'Petter Tèo', 'email' => 'teo@gmail.com',
-            'password' => bcrypt('hihi'), 'idgroup' => 0,'diachi' => 'HN'
-        ]);
+        // \App\Models\User::factory(10)->create();
+        // DB::table('users')->insert([
+        //     'name' => 'Vui Từng Phút Giây', 'email' => 'vuiqua@gmail.com',
+        //     'password' => bcrypt('hehe'), 'idgroup' => 1,'diachi' => 'TPHCM'
+        // ]);
+        // DB::table('users')->insert([
+        //     'name' => 'Buồn Từng Phút Giây', 'email' => 'buonqua@gmail.com',
+        //     'password' => bcrypt('huhu'), 'idgroup' => 1,'diachi' => 'TPHCM'
+        // ]);
+        // DB::table('users')->insert([
+        //     'name' => 'Petter Tèo', 'email' => 'teo@gmail.com',
+        //     'password' => bcrypt('hihi'), 'idgroup' => 0,'diachi' => 'HN'
+        // ]);
+        
     }
 }

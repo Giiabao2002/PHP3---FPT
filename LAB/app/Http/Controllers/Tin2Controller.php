@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Tin;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class Tin2Controller extends Controller
 {
@@ -26,6 +27,7 @@ class Tin2Controller extends Controller
         $t->tomTat = $_POST['tomTat'];
         $t->urlHinh = $_POST['urlHinh'];
         $t->idLT = $_POST['idLT'];
+        $t->slug = Str::slug($_POST['tieuDe']);
         $t->save();
         return redirect('/danhsachtin');
     }
@@ -45,6 +47,7 @@ class Tin2Controller extends Controller
         $t->tomTat = $_POST['tomTat'];
         $t->urlHinh = $_POST['urlHinh'];
         $t->idLT = $_POST['idLT'];
+        $t->slug = Str::slug($_POST['tieuDe']);
         $t->save();
         return redirect('/danhsachtin');    
     }

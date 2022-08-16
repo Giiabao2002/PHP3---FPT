@@ -35,7 +35,7 @@
 
         @foreach ($data as $value)
         <div style="flex-basis: 33.333%;margin:16px -12px;padding: 10px 12px;">
-            <a href="{{route('chitiettin',['id'=>$value->id])}}" class="card w-100" style="color:black;">
+            <a href="{{route('chitiettin',['slug'=>$value->slug])}}" class="card w-100" style="color:black;">
                 <div class="card-body" style="padding: 0 20px;height: 100%;">
                     <img src="{{asset('images/no-image.png')}}" alt="no-image" style="width: 100%;">
                   <h4 class="card-title">{{$value->tieuDe}}</h4>

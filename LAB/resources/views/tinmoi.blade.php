@@ -35,13 +35,14 @@
             <div class="" style="display: flex;flex-direction: row;flex-wrap: wrap;box-sizing: border-box">
                 
                 @foreach ($data as $value)
+                {{-- {{dd($value)}} --}}
                     <div style="flex-basis: 33.333%;margin:16px -12px;padding: 10px 12px;">
-                        <a href="{{route('chitiettin',['id'=>$value->id])}}" class="card w-100" style="color:black;">
+                        <a href="{{route('chitiettin',['slug'=>$value->slug ?? null])}}" class="card w-100" style="color:black;">
                             <div class="card-body" style="padding: 0 20px;height: 100%;">
                                 <img src="{{asset('images/no-image.png')}}" alt="no-image" style="width: 100%;">
                               <h4 class="card-title">{{$value->tieuDe}}</h4>
                               <p class="card-text"><b>Ngày đăng: </b>{{$value->ngayDang}}</p>
-                              <a href="#" class="btn btn-primary">See More</a>
+                              <a href="#" class="btn btn-primary">Xem thêm</a>
                             </div>
                         </a>
                     </div>

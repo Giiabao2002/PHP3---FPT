@@ -166,6 +166,12 @@ body{
   margin-bottom: 0;
 }
 
+/* validate */
+.alert.alert-danger{
+  color: red;
+  font-size: 12px;
+}
+
 @media (max-width:420px) {
   .wrapper .form .inputfield{
     flex-direction: column;

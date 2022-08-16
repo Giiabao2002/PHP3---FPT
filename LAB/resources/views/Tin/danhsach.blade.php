@@ -1,7 +1,7 @@
 @extends('components.layout')
 
 @section('title')
-    Danh Sach Tin
+    Danh Sách Tin
 @endsection
 
 @section('css')
@@ -37,7 +37,7 @@
                 
                 @foreach ($data as $tin)
                     <div style="flex-basis: 33.333%;margin:16px -12px;padding: 10px 12px;">
-                        <a href="{{route('chitiettin',['id'=>$tin->id])}}" class="card w-100" style="color:black;">
+                        <a href="{{route('chitiettin',['slug'=>$tin->slug])}}" class="card w-100" style="color:black;">
                             <div class="card-body" style="padding: 0 20px;height: 100%;">
                                 <img src="{{asset('images/no-image.png')}}" alt="no-image" style="width: 100%;">
                               <h4 class="card-title">{{$tin->tieuDe}}</h4>

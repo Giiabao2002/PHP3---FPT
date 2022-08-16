@@ -4,7 +4,7 @@
 @endsection
 
 @section('title')
-    Thông Tin SV
+    Cập Nhật Tin
 @endsection
 
 @section('content')

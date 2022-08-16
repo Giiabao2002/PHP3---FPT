@@ -14,6 +14,9 @@
     <!-- custom css file link  -->
 
     <link rel="stylesheet" href={{asset("css/style.css")}}>
+    {{-- cdn jquery --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     @yield('css')
 </head>
 
